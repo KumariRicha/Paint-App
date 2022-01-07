@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;  /* this is done so that if we apply padding or border on any element its Actual Width isnot affected */
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*CENTERS  HORIZONTALLY it needs width*/
+    justify-content: center; /*CENTERS  VERTICALLY its needs height  min-height*/
+    margin: 0;
+    overflow: hidden;
+}
