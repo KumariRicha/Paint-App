@@ -1,13 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
 *{
     box-sizing: border-box;  /* this is done so that if we apply padding or border on any element its Actual Width isnot affected */
+    
 }
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Muli', sans-serif;
+    background-color: #f5f5f5;
     display: flex;
     flex-direction: column;
     align-items: center; /*CENTERS  HORIZONTALLY it needs width*/
     justify-content: center; /*CENTERS  VERTICALLY its needs height  min-height*/
     margin: 0;
     overflow: hidden;
+    height: 100vh;
+}
+canvas{
+    border: 2px solid steelblue;
+}
+.toolbox{
+    background-color: steelblue;
+    border: 1px solid steelblue;
+    display: flex;
+    width: 404px;
+    padding: 0.5rem;
+    font-size: 16px;
+}
+/* direct children of toolbox no matter div or span */
+.toolbox >*{
+background-color: white;
+border: none;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+font-size: 2rem;
+/* height: 50px;
+width: 50px; */
+height: 30px;
+width: 30px;
+margin: 0.25rem;
+padding: 0.25rem;
+}
+
+/* direct children of toolbox but the LAST ONES the 'X' one*/
+.toolbox >*:last-child{
+margin-left: auto;
+font-size: 16px;
 }
